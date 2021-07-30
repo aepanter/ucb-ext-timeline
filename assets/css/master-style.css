@@ -47,14 +47,12 @@ h3 {
 }
 
 .logo-desktop {
-    display: inline;
-    float: left;
-    width: 271px;
-    height: 377px;
+    float: right;
+    max-width: 280px;
 }
 
 .logo-mobile {
-    display: none;
+    display: none;  
 }
 
 @media screen and (max-width: 576px) {
@@ -66,18 +64,15 @@ h3 {
     .logo-mobile {
         display: inline;
         float:left;
-        width: 215px;
+        max-width: 215px;
     }
 
 }
-
 .video-embed
 {
     position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 315px;
-    padding-top: 56.25%;
+    height: 0px;
+    padding-bottom: 56.25%;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -87,8 +82,6 @@ h3 {
     position: absolute;
     top: 0;
     left: 0;
-    bottom: 0;
-    right: 0;
     width: 100%;
     height: 100%;
 
@@ -103,23 +96,33 @@ hr {
 .footer-address-block {
     display: inline;
     float: left;
-    margin: auto;
+    margin-top: 20px;
     text-align: left;
     line-height: 22px;
 }
 
+a img {
+    border: 0 none;
+}
+
+.image-link {
+    text-decoration: none;
+}
+
 .footer-icons {
-    display: inline;
     max-width: 48px;
-    max-height: 48px;
     margin-left: 15px;
+    display: inline;
+}
+    
+.footer-icons-desktop {
     float: right;
+    margin-top: 20px;
 }
 
 @media screen and (max-width: 576px) {
-    .footer-icons {
-        margin-top: 20px;
-     
+    .footer-icons-desktop {
+        float: left;
     }
 }
 
