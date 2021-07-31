@@ -3,15 +3,15 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charset="utf-8">
-        <link rel="stylesheet" href="./assets/css/master-style.css" />
-       
+        
          <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap-grid.min.css"
       integrity="sha512-cKoGpmS4czjv58PNt1YTHxg0wUDlctZyp9KUxQpdbAft+XqnyKvDvcGX0QYCgCohQenOuyGSl8l1f7/+axAqyg=="crossorigin="anonymous" referrerpolicy="no-referrer" />
-
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./assets/css/master-style.css" />
 
         <title>130 Years: 1891 - 2021 | UC Berkeley Extension </title>
     </head>  
@@ -21,7 +21,6 @@
                 <div class="col-md-3">
                 <header>
                     <img class="image-responsive logo-desktop" src="./assets/images/logos-icons/ucbe130-logo.svg" alt="UCB Logo with 130 years of history tagline" />   
-
                     <img class="image-responsive logo-mobile" src="./assets/images/logos-icons/UCBE-logo.svg" alt="UCB Logo" />  
                 </header>
             </div>
@@ -57,14 +56,14 @@
         The central concept of Extension, as envisioned by it’s first proponents, notably the two UCPresidents, Edward S. Holden and Horace Davis, has always been the accessibility to the courses offered by our instructors. Consequently, Extension courses took place where the learners worked and lived, not on the remote campus in Berkeley. After the immediate success of its first courses, the regents officially adopted an extramural instruction plan that formally established the University Extension on Valentine’s Day, February 14, 1893.The concept of accessibility and the willingness to go towards the learners led Extension to constantly innovate new ways of reaching learners, for example, in 1928 Extension teaches on commuter trains, in 1945 Extension taught over 26,000 learners via its correspondence courses, in 1994 Extension ventures into online education and in 2012 Extension creates the UC’s first online course production department BRCO.
     </p>
 
-    <!-- <div class="col-8">
+ <div class="col-8 fade autoplay">
 
         <img class="image-responsive" src="./assets/images/home-imgs/homepage-graduate-ucb_com-58.JPG" alt="Student in graduation cap and gown looking into the distance persumably at her bright future." />
 
         <img class="image-responsive" src="./assets/images/home-imgs/students-milling.jpg" alt="Ariel view of students walking to class through iconic gate on campus." />
 
         <img class="image-responsive" src="./assets/images/home-imgs/bike_1200_Zhukova.jpg" alt="Student riding her bike." />
-    </div> -->
+    </div> 
 
                     <p>
                         Today, in part due to the global pandemic, Extension has developed the capacity to reach learners beyond the bay area with live instruction. Learners from anywhere in the world are now able to join our courses and we can help them, to launch or change their careers, to support their families, and share their knowledge and the Berkeley mindset.  
@@ -113,5 +112,27 @@
         </footer>
             </div>
         </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+        </script>
+        
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
+        </script>
+
+        <script>
+            $('.fade').slick({
+                dots: false,
+                infinite: true,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear'
+            });
+
+            $('.autoplay').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: false,
+                });
+        </script>
+
     </body>  
 </html>

@@ -87,6 +87,20 @@ h3 {
 
 }
 
+.slick-next {
+    right: 25px;
+}
+
+.slick-prev {
+    left: -10px;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: #FDB515;
+    font-size: 29px;
+    line-height: 9;
+}
+
 hr {
     height: 1px;
     background-color: #3B7EA1; 
