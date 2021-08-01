@@ -16,6 +16,7 @@ body {
     color: #000000;
 }
 
+
 h1 {
     font-size: 36px;
     font-weight: 600;
@@ -55,6 +56,87 @@ h3 {
     display: none;  
 }
 
+.menu-desktop {
+    visibility: visible;
+}
+
+
+.menu-mobile
+{
+  width: 100%;
+  height: auto;
+}
+
+/* -------------- Burgur styling ----------------- */
+.btn
+{
+  font-size: 33px;
+  background: none;
+  display: none;
+  text-align: right;
+
+}
+
+/* ----------- close btn ------------- */
+.close-btn
+{
+    top: 0;
+    left: 0;
+    font-size: 33px;
+    color: salmon;
+    background: none;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: right;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu {
+    display: none;
+    visibility: hidden;
+}
+
+.menu.open-menu {
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 5s all;
+    visibility: visible;
+}
+
+.open-menu ul
+{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+
+.open-menu ul li
+{
+  list-style: none;
+  padding: 6px;
+}
+
+.open-menu ul li a
+{
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+
+.open-menu ul li a:hover
+{
+  border-bottom: 5px solid #000;
+  transition: 0.2s all;
+}
+
 @media screen and (max-width: 576px) {
     .logo-desktop {
         visibility: hidden;
@@ -67,7 +149,19 @@ h3 {
         max-width: 215px;
     }
 
-}
+    .menu-desktop {
+        visibility: hidden;
+        display: none;
+    }
+
+    .btn {
+        display: inline;
+        visibility: visible;
+        float: right;
+    }
+
+    }
+
 .video-embed
 {
     position: relative;
@@ -77,6 +171,8 @@ h3 {
     margin-bottom: 20px;
 }
 
+
+
 .responsive-iframe 
 { 
     position: absolute;
@@ -84,22 +180,41 @@ h3 {
     left: 0;
     width: 100%;
     height: 100%;
+}
 
+.no-left-gutter {
+    padding-left: 0px;
+}
+
+/* use for decade pages
+.slickcarousel {
+    margin: 0 auto;
+    padding: 15px;
+    width: 90%;
+    color: #333;
+    background: #419be0;
+  } */
+  
+.slick-slide { 
+padding: 0px 15px 0px 0px; 
 }
 
 .slick-next {
-    right: 25px;
-}
+    right: 50px;
+} 
 
 .slick-prev {
+    z-index: 10;
     left: -10px;
 }
 
 .slick-prev:before, .slick-next:before {
     color: #FDB515;
     font-size: 29px;
-    line-height: 9;
-}
+    line-height: 8;
+    padding: 15px;
+    text-shadow: 2px 1.25px 0px #8888;
+} 
 
 hr {
     height: 1px;
@@ -140,14 +255,4 @@ a img {
     }
 }
 
-.menu-inactive {
-    font-size: 18px;
-    font-weight: 600;
-    color: #46535E;
-}
 
-.menu-active {
-    font-size: 18px;
-    font-weight: 600;
-    color: #888888
-}
