@@ -58,6 +58,14 @@ h3 {
 
 .menu-desktop {
     visibility: visible;
+    margin-inline-start: -40px;
+
+}
+
+.menu-desktop ul li {
+    display: inline-block;
+    list-style: none;
+    padding-right: 35px;
 }
 
 .menu-desktop ul li a
@@ -70,8 +78,8 @@ h3 {
 }
 .menu-mobile
 {
-  width: 100%;
   height: auto;
+  visibility: hidden;
 }
 
 /* -------------- Burgur styling ----------------- */
@@ -83,17 +91,25 @@ h3 {
   text-align: right;
 }
 
+.btn.close-btn {
+    color: transparent;
+    position: relative;
+    z-index: 2;
+}
+
 .menu {
     display: none;
     visibility: hidden;
 }
 
+/* mobile menu styling  */
 .menu.open-menu {
+    top: 2px;
+    right: 25px;
     width: 140px;
     height: auto;
     display: inline-flex;
     position: absolute;
-    top: 0;
     box-shadow: 3px 3px 10px 5px #003262;
     border: #003262;
     border-radius: 5px;
@@ -102,6 +118,7 @@ h3 {
     transition: 1s all;
     visibility: visible;
 }
+
 
 .open-menu ul
 {
@@ -119,7 +136,7 @@ h3 {
   
 }
 
-.open-menu ul li a
+.open-menu ul li a, .menu-desktop ul li a
 {
   text-decoration: none;
   font-size: 18px;
@@ -128,7 +145,14 @@ h3 {
   color: #46535E;
 }
 
-.open-menu ul li a:hover
+.open-menu ul li a:hover, .menu-desktop ul li a:hover
+{
+  border-bottom: 1px solid #FDB515;
+  color: #888888;
+  transition: 0.2s all;
+}
+
+.open-menu ul li a:active, .menu-desktop ul li a:active
 {
   border-bottom: 1px solid #FDB515;
   color: #888888;
