@@ -78,23 +78,9 @@ h3 {
 .btn
 {
   font-size: 33px;
+  color: #003262;
   background: none;
   text-align: right;
-}
-
-.btn, .zmdi.zmdi-menu {
-    visibility: visible;
-}
-
-.btn.close, .zmdi.zmdi-close {
-    visibility: hidden;
-}
-
-.btn.close-btn, .zmdi.zmdi-menu {
-    visibility: hidden;
-}
-.btn.btn.close-btn, .zmdi.zmdi-close {
-    visibility: visible;
 }
 
 .menu {
@@ -105,8 +91,9 @@ h3 {
 .menu.open-menu {
     width: 140px;
     height: auto;
-    display: flex;
+    display: inline-flex;
     position: absolute;
+    top: 0;
     box-shadow: 3px 3px 10px 5px #003262;
     border: #003262;
     border-radius: 5px;
@@ -165,10 +152,9 @@ h3 {
         display: none;
     }
 
-    .btn {
+    .menu-mobile {
         display: inline;
         visibility: visible;
-        float: right;
     }
 
     }
