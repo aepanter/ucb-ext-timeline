@@ -58,14 +58,18 @@ h3 {
 
 .menu-desktop {
     visibility: visible;
-    margin-inline-start: -40px;
 
+}
+
+.menu-desktop ul {
+    margin: 0px;
+    padding: 0px 0px 0px 15px;
 }
 
 .menu-desktop ul li {
     display: inline-block;
-    list-style: none;
-    padding-right: 35px;
+    width: 64px;
+    margin-right: 20px;
 }
 
 .menu-desktop ul li a
@@ -76,6 +80,7 @@ h3 {
   line-height: 24px;
   color: #46535E;
 }
+
 .menu-mobile
 {
   height: auto;
