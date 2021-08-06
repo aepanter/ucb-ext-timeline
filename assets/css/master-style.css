@@ -34,7 +34,7 @@ h2 {
 }
 
 h3 {
-    font-size: 21px;
+    font-size: 24px;
     font-weight: 600;
     line-height: 28px;
     color: #C4820E;
@@ -67,15 +67,19 @@ h3 {
 }
 
 .menu-desktop ul li {
-    display: inline-block;
-    width: 64px;
-    margin-right: 20px;
+    display: inline-flex;
+    flex-direction: column;
+    margin: 0px 20px 10px 0px;
+}
+
+
+.menu-desktop ul li:last-child a {
+    top: 0;
 }
 
 .menu-desktop ul li a
 {
   text-decoration: none;
-  font-size: 18px;
   font-weight: 600;
   line-height: 24px;
   color: #46535E;
@@ -144,9 +148,7 @@ h3 {
 .open-menu ul li a, .menu-desktop ul li a
 {
   text-decoration: none;
-  font-size: 18px;
   font-weight: 600;
-  line-height: 24px;
   color: #46535E;
 }
 
@@ -163,6 +165,13 @@ h3 {
   color: #888888;
   transition: 0.2s all;
 }
+
+.active
+{
+  border-bottom: 1px solid #FDB515;
+  color: #888888;
+}
+
 
 @media screen and (max-width: 576px) {
     .logo-desktop {
@@ -197,8 +206,6 @@ h3 {
     margin-bottom: 20px;
 }
 
-
-
 .responsive-iframe 
 { 
     position: absolute;
@@ -212,14 +219,28 @@ h3 {
     padding-left: 0px;
 }
 
-/* use for decade pages
-.slickcarousel {
-    margin: 0 auto;
+.no-gutter {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.decade-headline {
+    display: inline-flex;
+}
+
+i.zmdi.zmdi-long-arrow-right {
+    position: relative;
+    top: 22px;
+    color: #DDD5C7;
+    -webkit-text-stroke:9px #DDD5C7;
+    padding: 0px 10px 0px 10px;
+}
+
+.overlay {
+    position: absolute;
     padding: 15px;
-    width: 90%;
-    color: #333;
-    background: #419be0;
-  } */
+    left: 86px;
+  }
   
 .slick-slide { 
 padding: 0px 15px 0px 0px; 
@@ -241,6 +262,53 @@ padding: 0px 15px 0px 0px;
     padding: 15px;
     text-shadow: 2px 1.25px 0px #8888;
 } 
+
+/* use for decade pages*/
+.decades-slider-container{
+    margin: 0 auto;
+    padding: 25px 0px 45px;
+    width: 100%;
+    float: left;
+    background: #EEEEEE;
+    border: 1px solid #46535E;
+  } 
+
+img.image-responsive.decade {
+    border: 1px solid #707070;
+}
+
+
+div.decades-slider-container button.slick-next.slick-arrow {
+    top: 170px;
+    right: 50px;
+} 
+
+div.decades-slider-container button.slick-prev.slick-arrow {
+    z-index: 10;
+    top: 170px;
+    left: -10px;
+} 
+
+.caption-box
+{
+    position: absolute;
+    top: 200px;
+    margin: 15px;
+    width: 370px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    font-size: 8px;
+    line-height: 11px;
+    color: #000000;
+
+}
+
+ .caption-box p {
+     margin: 0px 30px 0px;
+     padding: 5px 0px;
+     width: 80%;
+     text-align: center;
+}  
 
 hr {
     height: 1px;
