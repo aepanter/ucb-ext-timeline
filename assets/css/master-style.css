@@ -133,7 +133,7 @@ h3 {
 {
   display: flex;
   flex-direction: column;
-  margin-top: -16px;
+  margin-top: -5px;
 
 }
 
@@ -226,6 +226,7 @@ h3 {
 
 .decade-headline {
     display: inline-flex;
+    margin-bottom: 20px;
 }
 
 i.zmdi.zmdi-long-arrow-right {
@@ -242,6 +243,20 @@ i.zmdi.zmdi-long-arrow-right {
     left: 86px;
   }
   
+div.header-background {
+    background-image: url(assets/images/2021/2021-header-keegan-houser.png); 
+}
+
+  div.transparent-box-header {
+    background-color: #C4820E;
+    opacity: 0.73;
+  }
+
+  div.transparent-box-header h1{
+    text-align: center;
+    color: #ffffff;
+  }
+
 .slick-slide { 
 padding: 0px 15px 0px 0px; 
 }
@@ -265,7 +280,7 @@ padding: 0px 15px 0px 0px;
 
 /* use for decade pages*/
 .decades-slider-container{
-    margin: 0 auto;
+    margin-bottom: 20px;
     padding: 25px 0px 45px;
     width: 100%;
     float: left;
