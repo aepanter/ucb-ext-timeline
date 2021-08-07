@@ -547,13 +547,13 @@ img.image-responsive.light-box {
     border: 1px solid #707070;
 }
 
-i.zmdi.zmdi-zoom-in.zmdi-hc-2x {
+/* i.zmdi.zmdi-zoom-in.zmdi-hc-2x {
     position: absolute;
     left: 68%;
     top: 40%;
     color: #003262;
     text-shadow: 2px 2px 10px #ffffff;
-}
+} */
 
 .light-box-container p {
     width: 25%;
