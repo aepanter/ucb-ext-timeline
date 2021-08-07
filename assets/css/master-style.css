@@ -242,18 +242,20 @@ i.zmdi.zmdi-long-arrow-right {
     padding: 15px;
     left: 86px;
   }
-  
-div.header-background {
-    background-image: url(assets/images/2021/2021-header-keegan-houser.png); 
-}
 
   div.transparent-box-header {
+    position: absolute;
+    top: 7%;
+    width: 95%;
     background-color: #C4820E;
     opacity: 0.73;
+    
   }
 
   div.transparent-box-header h1{
-    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3%;
     color: #ffffff;
   }
 
@@ -324,6 +326,20 @@ div.decades-slider-container button.slick-prev.slick-arrow {
      width: 80%;
      text-align: center;
 }  
+
+.light-box-container {
+    padding: 15px 0px 15px 34px;
+    background: #DDD5C7;
+    border: 1px solid #707070;
+} 
+
+.light-box-container img {
+    border: 1px black solid;
+}
+
+.light-box-container p {
+    font-size: 12px;
+}
 
 hr {
     height: 1px;

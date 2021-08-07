@@ -9,8 +9,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap-grid.min.css"
       integrity="sha512-cKoGpmS4czjv58PNt1YTHxg0wUDlctZyp9KUxQpdbAft+XqnyKvDvcGX0QYCgCohQenOuyGSl8l1f7/+axAqyg=="crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
-        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="./assets/css/lightbox.css" rel="stylesheet" />
         <link rel="stylesheet" href="./assets/css/master-style.css" />
         
         <title>2021 | UC Berkeley Extension </title>
@@ -105,52 +104,37 @@
     <!-- Start main body content  -->
         <div class="col col-md-7">
             <main>
-                <section>  
-                    <div class="header-background" >
+                <section> 
+                        <img class="image-responsive" src="./assets/images/2021/2021-header-keegan-houser.png" alt="" />
                     <div class="transparent-box-header">
-                       <!-- <img class="image-responsive" src="./assets/images/2021/2021-header-keegan-houser.png" alt="" /> -->
                         <h1>2021</h1>
                 </div>
-            </div>
-
 <p>
     In the wake of the 2020 pandemic, and still grappling with its socioeconomic fallout, Extension fully embraces an “Online First” strategy with the objective of creating better access to learners in the San Francisco Bay area as well as across the U.S. and around the globe. 
 </p>
 
-<p>
-    By assuming its role as global representative of the university for study away and study abroad partnerships, Extension is also investing in institutional partnerships to build meaningful study pathways within the U.S. and internationally. Finally, to provide more access to college, Extension plans to develop Pre-Collegiate and K-12 offerings with defined pathways into partner colleges.
-</p>
-<!-- slide show goes here -->
-<div class="row no-gutter">
-    <div class="col col-md-11">
-        <div class="decades-slider-container">
-        <div class="multiple-items">
-            <div>
-               <img class="image-responsive decade" src="./assets/images/2011-2020/2011-20-brochure2.png" alt="Image of brochure" />
+<!-- lightbox goes here -->
 
-                   <!-- <div class="caption-box">
-                   <p></p>
-                </div> -->
+<div class="light-box-container">
+        <a href="./assets/images/2021/library-ucb-lg.png" data-lightbox="students" data-title="Student in library">
+            <img src="./assets/images/2021/library-ucb-sm.png" />
+        </a>
+        <p>Students primarily learned remotely but facilities were still available for studying. </p>
+</div>
 
-            </div>
-   
-            <div>
-               <img class="image-responsive decade" src="./assets/images/2011-2020/2011-20-brochures.png" alt="Image of brochure." />
-                <!-- <div class="caption-box">
-                   <p></p>
-                </div> -->
-           </div>
+<hr>
 
-           <div>
-            <img class="image-responsive decade" src="./assets/images/2011-2020/2011-20DoeLibrary-keeganHouser.png" alt="Image of campus in the fall." />
-                <!-- <div class="caption-box">
-                <p></p>
-             </div> -->
-         </div>
-        </div>
-       </div>
-                </div>
- </div>
+        <p>
+            By assuming its role as global representative of the university for study away and study abroad partnerships, Extension is also investing in institutional partnerships to build meaningful study pathways within the U.S. and internationally. Finally, to provide more access to college, Extension plans to develop Pre-Collegiate and K-12 offerings with defined pathways into partner colleges.
+        </p>
+
+        <a href="./assets/images/2021/memorialglade-keegan-houser-lg.png" data-lightbox="students" data-title="Memorial Glade">
+            <img src="./assets/images/2021/memorialglade-keegan-houser-sm.png" /></a>
+
+        <a href="./assets/images/2021/studentlunch-zhukova-lg.png" data-lightbox="students" data-title="Students eating lunch">
+            <img src="./assets/images/2021/studentlunch-zhukova-sm.png" />
+        </a>
+
             </section>
         </main>
 </div>
@@ -195,7 +179,7 @@
             </div>
         </div>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"> </script>
-        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="./assets/js/lightbox.js"></script>
 
         <script>
             $(".btn").on("click", function(){
@@ -214,29 +198,5 @@ if (this.href == window.location.href) {
 });
 });
 </script>
-
-        <script>
-            $(document).ready(function(){
-                $('.multiple-items').slick({
-                infinite: true,
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                variableWidth: true,
-                variableHeight: true,
-                responsive: [
-                        {
-                        breakpoint: 480,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1,
-                        }
-                        }
-                    ]
-                });
-
-            });
-
-        </script>
-
     </body>  
 </html>
